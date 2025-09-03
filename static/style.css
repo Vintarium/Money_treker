@@ -1,0 +1,94 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#uploadForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#fileInput {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+}
+
+.custom-file-upload:hover {
+    background-color: #d2e3fc;
+}
+
+#submitBtn {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+}
+
+#submitBtn:hover {
+    background-color: #1565c0;
+}
+
+#submitBtn:disabled {
+    background-color: #aeb4b9;
+    cursor: not-allowed;
+}
+
+.status-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.result-container {
+    margin-top: 25px;
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    white-space: pre-wrap; /* Сохраняет форматирование JSON */
+    word-wrap: break-word; /* Переносит длинные строки */
+    overflow-x: auto;
+}
